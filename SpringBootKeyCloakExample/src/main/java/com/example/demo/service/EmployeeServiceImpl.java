@@ -4,12 +4,13 @@ import java.util.List;
 import java.util.stream.Stream;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import com.example.demo.entity.Employee;
 import com.example.demo.repo.EmployeeRepository;
 
 import jakarta.annotation.PostConstruct;
-
+@Service
 public class EmployeeServiceImpl implements EmployeeService {
 
 	@Autowired

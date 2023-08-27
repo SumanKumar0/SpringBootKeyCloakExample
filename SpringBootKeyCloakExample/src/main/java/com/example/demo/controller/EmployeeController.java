@@ -17,13 +17,13 @@ public class EmployeeController {
 	@Autowired
 	EmployeeService employeeService;
 	
-	@GetMapping("/Employee/{id}")
+	@GetMapping("/Employee/get/{id}")
 	public ResponseEntity<Employee> getEmployee(@PathVariable int  id)
 	{
 	return	ResponseEntity.ok(employeeService.getEmployee(id));
 	}
 	
-	@GetMapping("/Employee/{id}")
+	@GetMapping("/Employee")
 	public ResponseEntity<List<Employee>> getEmployee()
 	{
 	return	ResponseEntity.ok(employeeService.getEmployee());
