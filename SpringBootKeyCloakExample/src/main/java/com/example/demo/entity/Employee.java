@@ -15,7 +15,7 @@ import lombok.ToString;
 @Setter
 @NoArgsConstructor
 @ToString
-
+//EmployeeTable
 @Entity
 public class Employee {
 	public Employee(String name, double salery) {
